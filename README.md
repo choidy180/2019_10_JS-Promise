@@ -20,3 +20,18 @@ resolve : 함수 안의 처리가 끝났을 때 호출해야 하는 콜백 함�
           
 reject : 함수 안의 처리가 실패했을 때 호출해야 하는 콜백 함수, reject 함수에는 어떠한 값도 인수로 넘길 수 있다
          대부분의 경우 오류 메시지 문자열을 인수로 사용한다.
+
+
+let promise = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        console.log("A");
+        resolve();
+    }, 1000);
+});
+promise.then(function(){
+    console.log("B");
+});
+
+위의 코드를 실행하면 1초후에 A가 표시되고 그 다음 B가 표시된다. 이 코드에서 Promise에 인수를 넘긴 함수는 비동기 처리를 수행하는 함수,
+1초후에 "A"를 표시하고, 그 다음에는 함수 resolve를 호출해서  Promise 안의 처리를 종료시킨다 resolve 함수가 실행되면 then 메서드에
+등록한 함수가 
