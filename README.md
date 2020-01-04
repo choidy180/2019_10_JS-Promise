@@ -9,9 +9,9 @@
 비동기 처리를 실행하고 그 처리가 끝난 후에 다음 처리를 실행하기 위한 용도
 Promise를 사용하려면 먼저 Promise 객체를 생성해야 한다. 
 
-Promise 생성자의 사용법
++ Promise 생성자의 사용법
 
-let promise = new Promise(function(resolve, reject) { ... } );
+    let promise = new Promise(function(resolve, reject) { ... } );
 
 Promise에는 실행하고자 하는 처리를 작성한 함수를 인수로 넘긴다. 그리고 이 함수는 다음과 같은 인수를 받는다
 
