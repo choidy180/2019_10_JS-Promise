@@ -9,6 +9,4 @@
 프로미스는 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용, 일반적으로 웹 어플리케이션 구현시
 서버에서 데이터를 요청하고 받아오기 위해 아래와 같은 API를 사용한다
 
-$.get('url 주소/products/1', function(response){
-    //...
-});
+$.get('url 주소/products/1', function(response){ //... });
