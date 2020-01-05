@@ -45,3 +45,10 @@ promise.then(onFullfilled);
 
 onFullfilled 함수는 성공 콜백함수이며 이는 promise 안의 처리가 정상적으로 끝났을 때 호출되는 함수
 onFullfilled 함수는 인수로 response 를 받고 이것은 promise 안에서 resolve 함수를 실행할 때 넘긴 인수
+
+# Promise를 실패로 처리하는 jeject 함수와 catch 메서드
+
+reject 함수는 Promise를 종료시킨다. resolve 함수와 마찬가지로 reject 함수에도 값을 넘길 수있고 reject 함수가 실행되면
+then 메서드에 넘긴 함수는 실행되지 않는다. 그 대신 catch 메서드에 넘긴 함수가 실행된다. catch 메서드의 사용법은 다음과 같다
+
+promise.catch(onRejected);
