@@ -70,3 +70,27 @@ promise 안의 처리가 성공하면 onFullfilled 함수가 수행, 실패하�
 Promise가 실행하는 콜백 함수에 인수를 넘기려면 Promise 객체를 반환하는 함수를 정의해서 구현할 수 있다.
 
 
+
+let promise = function(param){
+    return new Promise(function(first, second){
+        window.setTimeout(function() {
+            if(param){
+                first("해결완료");
+            }
+            else{
+                reject(Error("실패!!"));
+            }
+        }, 3000);
+    });
+};
+                          
+undefined
+promise(true)
+.then(function(text){
+    console.log(text);
+}, function(error){
+    console.error(error);
+});
+Promise {<pending>}
+
+
