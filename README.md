@@ -64,3 +64,9 @@ then 메서드 하나로 작성할 수 있다, 두 번째 인수를 지정한 th
 promise.then(onFullfilled, onRejected);
 
 promise 안의 처리가 성공하면 onFullfilled 함수가 수행, 실패하면 onRejected 함수가 실행
+
+# Promise가 실행하는 콜백 함수에 인수 넘기기
+
+Promise가 실행하는 콜백 함수에 인수를 넘기려면 Promise 객체를 반환하는 함수를 정의해서 구현할 수 있다.
+
+
