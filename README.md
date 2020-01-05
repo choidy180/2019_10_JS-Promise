@@ -37,3 +37,11 @@ promise.then(function(){
 등록한 함수가 호출된다
 
 # Promise를 종료시키는 resolve 함수와 then 메서드
+
+resolve 함수는 Promise를 종료시킨다. resolve 함수에 인수로 넘긴 값은 then 메서드에 인수로 넘긴 함수에 전달되어
+다음 처리를 위해 사용된다. then 메서드의 사용법은 다음과 같습니다
+
+promise.then(onFullfilled);
+
+onFullfilled 함수는 성공 콜백함수이며 이는 promise 안의 처리가 정상적으로 끝났을 때 호출되는 함수
+onFullfilled 함수는 인수로 response 를 받고 이것은 promise 안에서 resolve 함수를 실행할 때 넘긴 인수
