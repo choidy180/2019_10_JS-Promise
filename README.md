@@ -52,3 +52,6 @@ reject 함수는 Promise를 종료시킨다. resolve 함수와 마찬가지로 r
 then 메서드에 넘긴 함수는 실행되지 않는다. 그 대신 catch 메서드에 넘긴 함수가 실행된다. catch 메서드의 사용법은 다음과 같다
 
 promise.catch(onRejected);
+
+onRejected 함수는 실패 콜백 함수라고 하며 promise 안의 처리가 실패로 끝났을 때 호출되는 함수이다. onRejected 함수는
+인수로 error를 받으며 이것은 promise 안에서 reject 함수를 실행했을 때 넘긴 인수이다.
