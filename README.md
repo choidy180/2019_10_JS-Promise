@@ -58,7 +58,7 @@ onRejected 함수는 실패 콜백 함수라고 하며 promise 안의 처리가 
 
 # then의 두 번째 인수 
 
-then 메서드는 두 뻔재 인수로 실패 콜백 함수를 지정, 그러면 then 메서드 에서 처리할 내용과 catch 메서드에서 처리할 내용을
+then 메서드는 두  인수로 실패 콜백 함수를 지정, 그러면 then 메서드 에서 처리할 내용과 catch 메서드에서 처리할 내용을
 then 메서드 하나로 작성할 수 있다, 두 번째 인수를 지정한 then 사용법은 다음과 같다
 
 promise.then(onFullfilled, onRejected);
